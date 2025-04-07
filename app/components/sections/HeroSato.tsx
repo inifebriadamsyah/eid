@@ -225,7 +225,7 @@ export const HeroSato = () => {
             alt="flower2"
             width={96}
             height={96}
-            className="absolute top-[34rem] md:top-[12rem] right-[3.5rem] md:right-[16.5rem] -translate-x-1/2 h-[120px] w-auto md:w-[192px] md:h-auto object-cover z-20"
+            className="absolute top-[32rem] md:top-[12rem] right-[3.5rem] md:right-[16.5rem] -translate-x-1/2 h-[120px] w-auto md:w-[192px] md:h-auto object-cover z-20"
             animate={{
               rotate: "1turn",
             }}
@@ -244,7 +244,7 @@ export const HeroSato = () => {
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[33rem] md:top-[9rem] right-[3rem] md:right-[15.5rem] -translate-x-1/2 h-[164px] w-auto md:w-[246px] md:h-auto object-cover"
+            className="absolute top-[31rem] md:top-[9rem] right-[3rem] md:right-[15.5rem] -translate-x-1/2 h-[164px] w-auto md:w-[246px] md:h-auto object-cover"
             style={{
               translateY: translateYY,
             }}
@@ -254,7 +254,7 @@ export const HeroSato = () => {
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[23rem] md:top-[43.5rem] -left-[3.7rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
+            className="absolute top-[22rem] md:top-[43.5rem] -left-[1rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
               translateX: translateX
@@ -265,7 +265,7 @@ export const HeroSato = () => {
             alt="flower3"
             width={96}
             height={96}
-            className="absolute top-[24rem] md:top-[46rem] -left-[2.5rem] md:left-[31.5rem] -translate-x-1/2 h-[98px] w-auto md:w-[192px] md:h-auto object-cover"
+            className="absolute top-[23rem] md:top-[46rem] left-[0.5rem] md:left-[31.5rem] -translate-x-1/2 h-[98px] w-auto md:w-[192px] md:h-auto object-cover"
             animate={{
               rotate: "-1turn",
             }}
@@ -306,7 +306,7 @@ export const HeroSato = () => {
         </div>
       </div>
       <div className="h-[767px] md:h-[1268px] mt-12 lg:mt-48 md:overflow-x-clip overflow-hidden [mask-image:linear-gradient(180deg,black_5%,black_78%,transparent_100%)]">
-        <div className="container justify-center text-center md:max-w-screen-lg md:w-full pb-20 pt-5 md:pt-32 mx-auto ">
+        <div className="container justify-center text-center md:max-w-screen-lg md:w-full pb-20 pt-2 md:pt-32 mx-auto ">
           <motion.h1
             ref={TitlesScope}
             initial={{ opacity: 0, y: 250, x: 0 }}
