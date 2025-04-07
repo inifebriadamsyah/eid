@@ -137,7 +137,7 @@ export const HeroSato = () => {
             src={longerBackground}
             height={1920}
             alt="bg"
-            className="h-[66rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem]"
+            className="h-[60rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem] -mt-4"
           />
         </div>
         <div className="relative">
@@ -145,7 +145,7 @@ export const HeroSato = () => {
             src={lamp.src}
             alt="lamp"
             width={144}
-            className="absolute left-[39%] md:left-[45%] -translate-x-1/2 -top-[14.5rem] md:-top-[30.5rem] h-auto w-[128px] md:w-[212px] md:h-auto object-cover"
+            className="absolute left-[39%] md:left-[45%] -translate-x-1/2 -top-[18.5rem] md:-top-[30.5rem] h-auto w-[128px] md:w-[212px] md:h-auto object-cover"
             animate={{
               rotate: "11deg",
             }}
