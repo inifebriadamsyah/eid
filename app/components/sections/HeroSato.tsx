@@ -137,7 +137,7 @@ export const HeroSato = () => {
             src={longerBackground}
             height={1920}
             alt="bg"
-            className="h-[60rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem] -mt-4"
+            className="h-[60rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem] -mt-6"
           />
         </div>
         <div className="relative">
@@ -145,7 +145,7 @@ export const HeroSato = () => {
             src={lamp.src}
             alt="lamp"
             width={144}
-            className="absolute left-[39%] md:left-[45%] -translate-x-1/2 -top-[18.5rem] md:-top-[30.5rem] h-auto w-[128px] md:w-[212px] md:h-auto object-cover"
+            className="absolute left-[39%] md:left-[45%] -translate-x-1/2 -top-[19rem] md:-top-[30.5rem] h-auto w-[128px] md:w-[232px] md:h-auto object-cover"
             animate={{
               rotate: "11deg",
             }}
@@ -161,7 +161,7 @@ export const HeroSato = () => {
             src={lamp.src}
             alt="lamp.src"
             width={144}
-            className="absolute right-[22%] md:right-[24%] -top-[11rem] md:-top-[29rem] translate-x-1/2 h-auto w-[74px] md:w-[172px] md:h-auto object-cover rotate-[-14deg]"
+            className="absolute right-[14%] md:right-[24%] -top-[11rem] md:-top-[29rem] translate-x-1/2 h-auto w-[74px] md:w-[172px] md:h-auto object-cover rotate-[-14deg]"
             animate={{
               rotate: "-8deg",
             }}
@@ -177,7 +177,7 @@ export const HeroSato = () => {
             src={lamp.src}
             alt="lamp"
             width={108}
-            className="absolute left-[12%] md:left-[25%] -top-[14rem] md:-top-[28.5rem] h-auto w-[98px] md:w-[172px] md:h-auto object-cover rotate-[11deg]"
+            className="absolute left-[8%] md:left-[25%] -top-[14rem] md:-top-[28.5rem] h-auto w-[98px] md:w-[172px] md:h-auto object-cover rotate-[11deg]"
             animate={{
               rotate: "-10deg",
             }}
@@ -254,7 +254,7 @@ export const HeroSato = () => {
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[16rem] md:top-[43.5rem] -left-[6rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
+            className="absolute top-[13rem] md:top-[43.5rem] -left-[6rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
               translateX: translateX
@@ -265,7 +265,7 @@ export const HeroSato = () => {
             alt="flower3"
             width={96}
             height={96}
-            className="absolute top-[17rem] md:top-[46rem] -left-[4.5rem] md:left-[31.5rem] -translate-x-1/2 h-[98px] w-auto md:w-[192px] md:h-auto object-cover"
+            className="absolute top-[14rem] md:top-[46rem] -left-[4.5rem] md:left-[31.5rem] -translate-x-1/2 h-[98px] w-auto md:w-[192px] md:h-auto object-cover"
             animate={{
               rotate: "-1turn",
             }}
