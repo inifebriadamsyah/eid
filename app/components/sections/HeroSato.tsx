@@ -189,13 +189,12 @@ export const HeroSato = () => {
               repeatType: "mirror",
             }}
           />
-
           <motion.img
             src={light.src}
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[7.5rem] md:top-[50rem] -right-[3.7rem] md:right-[31rem] -translate-x-1/2 h-[138px] w-auto md:w-[244px] md:h-auto object-cover"
+            className="absolute top-[1.5rem] md:top-[50rem] -right-[3.7rem] md:right-[31rem] -translate-x-1/2 h-[138px] w-auto md:w-[244px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
               translateX: translateXXX
@@ -206,7 +205,7 @@ export const HeroSato = () => {
             alt="flower"
             width={96}
             height={96}
-            className="absolute top-[9rem] md:top-[53rem] -right-[3.5rem] md:right-[31.5rem] -translate-x-1/2 h-[100px] w-auto md:w-[192px] md:h-auto object-cover"
+            className="absolute top-[3rem] md:top-[53rem] -right-[3.5rem] md:right-[31.5rem] -translate-x-1/2 h-[100px] w-auto md:w-[192px] md:h-auto object-cover"
             animate={{
               rotate: "1turn",
             }}
@@ -307,7 +306,7 @@ export const HeroSato = () => {
         </div>
       </div>
       <div className="h-[767px] md:h-[1268px] mt-12 lg:mt-48 md:overflow-x-clip overflow-hidden [mask-image:linear-gradient(180deg,black_5%,black_78%,transparent_100%)]">
-        <div className="container justify-center text-center md:max-w-screen-lg md:w-full pb-20 pt-20 md:pt-32 mx-auto ">
+        <div className="container justify-center text-center md:max-w-screen-lg md:w-full pb-20 pt-5 md:pt-32 mx-auto ">
           <motion.h1
             ref={TitlesScope}
             initial={{ opacity: 0, y: 250, x: 0 }}
