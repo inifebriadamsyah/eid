@@ -254,7 +254,7 @@ export const HeroSato = () => {
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[22rem] md:top-[43.5rem] -left-[1rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
+            className="absolute top-[16rem] md:top-[43.5rem] -left-[6rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
               translateX: translateX
@@ -265,7 +265,7 @@ export const HeroSato = () => {
             alt="flower3"
             width={96}
             height={96}
-            className="absolute top-[23rem] md:top-[46rem] left-[0.5rem] md:left-[31.5rem] -translate-x-1/2 h-[98px] w-auto md:w-[192px] md:h-auto object-cover"
+            className="absolute top-[17rem] md:top-[46rem] -left-[4.5rem] md:left-[31.5rem] -translate-x-1/2 h-[98px] w-auto md:w-[192px] md:h-auto object-cover"
             animate={{
               rotate: "-1turn",
             }}
