@@ -18,7 +18,7 @@ import Lenis from "lenis";
 import CallToAction from "./components/sections/CallToAction";
 import { Footer } from "./components/sections/Footer";
 import { ExpertCarousel } from "./components/sections/ExpertCarousel";
-import { RevealBento } from "./components/sections/RevealBento";
+
 import { ScrollReveal } from "./components/sections/ScrollReveal";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "./components/sections/preloader/Preloader";
