@@ -120,7 +120,7 @@ export const ScrollReveal = () => {
           </p>
         </div>
 
-        <div className="h-[108vh]" ref={targetRef}></div>
+        <div className="h-[128vh]" ref={targetRef}></div>
       </div>
     </div>
   );
