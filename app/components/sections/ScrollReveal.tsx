@@ -64,7 +64,7 @@ export const ScrollReveal = () => {
       />
 
       <div className="">
-        <div className="sticky top-40 md:top-16 lg:top-40 bg-black/70 overflow-hidden flex justify-center">
+        <div className="sticky top-16 md:top-16 lg:top-40 bg-black/70 overflow-hidden flex justify-center">
           <motion.img
             src={drum.src}
             alt="drum"
