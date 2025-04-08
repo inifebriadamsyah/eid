@@ -383,7 +383,7 @@ export const HeroSato = () => {
             </h1>
           </div>
           <h1
-            className={`mt-6 md:mt-20 text-base md:text-3xl tracking-wide ${newGerbil.className}`}
+            className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide ${newGerbil.className}`}
           >
             <TextEffect per="word" variants={fancyVariants} delay={3.6}>
               Adam dan keluarga
