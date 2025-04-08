@@ -19,7 +19,7 @@ export const ScrollReveal = () => {
   const translatingX = useTransform(scrollYProgress, [0.5, 0.9], [270, -60]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
-  const paragraph = "ubur - ubur ikan   lele, selamat lebaran    le 🙏";
+  const paragraph = "ubur - ubur ikan  lele, selamat lebaran  le 🙏";
   const words = paragraph.split(" ");
   return (
     <div className="relative w-full bg-black pb-36 overflow-x-clip">
@@ -106,7 +106,7 @@ export const ScrollReveal = () => {
           />
           <p
             // ref={targetRef}
-            className="text-6xl md:text-[104px] word-spacing-wide md:px-10 py-16 px-12 max-w-5xl text-white/70 tracking-wider font-semibold flex flex-wrap leading-[1.15]"
+            className="text-[3.7rem] md:text-[104px] word-spacing-wide md:px-10 py-16 px-12 max-w-5xl text-white/70 tracking-wider font-semibold flex flex-wrap leading-[1.15]"
           >
             {words.map((word, i) => {
               const start = i / words.length;

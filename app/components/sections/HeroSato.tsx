@@ -51,10 +51,10 @@ export const HeroSato = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateYYY = useTransform(scrollYProgress, [0, 1], [250, -250]);
+  const translateYYY = useTransform(scrollYProgress, [0, 1], [270, -250]);
   const translateYY = useTransform(scrollYProgress, [0, 1], [20, 430]);
-  const translateXXX = useTransform(scrollYProgress, [0.1, 0.7], [-40, 350]);
-  const translateX = useTransform(scrollYProgress, [0.1, 0.8], [40, -350]);
+  const translateXXX = useTransform(scrollYProgress, [0.1, 0.7], [-20, 350]);
+  const translateX = useTransform(scrollYProgress, [0.1, 0.8], [30, -350]);
 
   const [ImagesScope, ImagesAnimate] = useAnimate();
   const [TitlesScope, TitlesAnimate] = useAnimate();
@@ -193,7 +193,7 @@ export const HeroSato = () => {
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[1.5rem] md:top-[50rem] -right-[5rem] md:right-[31rem] -translate-x-1/2 h-[138px] w-auto md:w-[244px] md:h-auto object-cover"
+            className="absolute -top-[0.5rem] md:top-[50rem] -right-[5rem] md:right-[31rem] -translate-x-1/2 h-[138px] w-auto md:w-[244px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
               translateX: translateXXX,
@@ -204,7 +204,7 @@ export const HeroSato = () => {
             alt="flower"
             width={96}
             height={96}
-            className="absolute top-[3rem] md:top-[53rem] -right-[4.5rem] md:right-[31.5rem] -translate-x-1/2 h-[100px] w-auto md:w-[192px] md:h-auto object-cover"
+            className="absolute top-[1rem] md:top-[53rem] -right-[4.5rem] md:right-[31.5rem] -translate-x-1/2 h-[100px] w-auto md:w-[192px] md:h-auto object-cover"
             animate={{
               rotate: "1turn",
             }}
