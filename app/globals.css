@@ -54,4 +54,15 @@
   .scroll-file[style*="opacity: 1"] {
     @apply text-blue-300 dark:text-blue-500;
   }
+
+  .word-spacing-wide {
+    word-spacing: 10rem;
+  }
+
+}
+
+@layer utilities {
+  .word-spacing-wide {
+    word-spacing: 1rem;
+  }
 }

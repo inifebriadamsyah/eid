@@ -111,7 +111,7 @@ export const HeroSato = () => {
         y: Math.random() * 100 - 50,
         rotate: Math.random() * 90 - 45,
         scale: 0.3,
-        color: "#ffdd85",
+        color: "#fff0ca",
       }),
       visible: {
         opacity: 1,
@@ -136,7 +136,7 @@ export const HeroSato = () => {
             src={longerBackground}
             height={1920}
             alt="bg"
-            className="h-[60rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem] -mt-6"
+            className="h-[61rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem] -mt-6"
           />
         </div>
         <div className="relative">
@@ -349,7 +349,7 @@ export const HeroSato = () => {
             </TextLoop>
           </motion.h1>
           <div className="flex flex-row items-center mx-auto justify-center mt-6 md:mt-12">
-            <h1 className="md:text-[114px] text-[54px] font-bold tracking-wide bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(252,185,105,.5))] text-transparent bg-clip-text text-center z-20">
+            <h1 className="md:text-[114px] text-[50px] font-bold tracking-wide bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(252,185,105,.5))] text-transparent bg-clip-text text-center z-20">
               <TextEffect
                 per="char"
                 variants={fancyVariants}
@@ -367,10 +367,10 @@ export const HeroSato = () => {
               <Image
                 src={HeroImage2}
                 alt="hero1"
-                className="h-24 md:h-48 w-auto rounded-lg  "
+                className="h-24 md:h-48 w-auto mx-1"
               />
             </motion.div>
-            <h1 className="md:text-[114px] text-[54px] font-bold tracking-wide bg-white bg-[radial-gradient(100%_100%_at_top_left,rgb(252,185,105,.7),white)] text-transparent bg-clip-text text-center z-20">
+            <h1 className="md:text-[114px] text-[50px] font-bold tracking-wide bg-white bg-[radial-gradient(100%_100%_at_top_left,rgb(252,185,105,.7),white)] text-transparent bg-clip-text text-center z-20">
               <TextEffect
                 per="char"
                 variants={fancyVariants}
@@ -382,23 +382,23 @@ export const HeroSato = () => {
             </h1>
           </div>
           <h1
-            className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-6 md:mt-10 text-sm md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" preset="blur" delay={3.6}>
+            <TextEffect per="word" preset="blur" delay={3.5}>
               Adam dan keluarga
             </TextEffect>
           </h1>
           <h1
-            className={`mt-0 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-1 md:mt-4 text-sm md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" preset="blur" delay={3.8}>
+            <TextEffect per="word" preset="blur" delay={3.65}>
               mohon maaf lahir dan batin
             </TextEffect>
           </h1>
           <h1
-            className={`mt-2 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-2 md:mt-4 text-sm md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" preset="blur" delay={4}>
+            <TextEffect per="word" preset="blur" delay={4.1}>
               🙏🙏🙏
             </TextEffect>
           </h1>
