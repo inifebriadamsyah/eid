@@ -19,7 +19,7 @@ export const ScrollReveal = () => {
   const translatingX = useTransform(scrollYProgress, [0.5, 0.9], [270, -60]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
-  const paragraph = "ubur - ubur ikan  lele, selamat lebaran  le 🙏";
+  const paragraph = "ubur - ubur ikan lele, selamat lebaran  le 🙏";
   const words = paragraph.split(" ");
   return (
     <div className="relative w-full bg-black pb-36 overflow-x-clip">
