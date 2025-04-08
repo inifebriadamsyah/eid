@@ -53,7 +53,7 @@ export const HeroSato = () => {
 
   const translateYYY = useTransform(scrollYProgress, [0, 1], [250, -250]);
   const translateYY = useTransform(scrollYProgress, [0, 1], [20, 430]);
-  const translateXXX = useTransform(scrollYProgress, [0.2, 0.8], [-20, 350]);
+  const translateXXX = useTransform(scrollYProgress, [0.1, 0.7], [-40, 350]);
   const translateX = useTransform(scrollYProgress, [0.1, 0.8], [40, -350]);
 
   const [ImagesScope, ImagesAnimate] = useAnimate();
