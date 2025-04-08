@@ -53,9 +53,8 @@ export const HeroSato = () => {
 
   const translateYYY = useTransform(scrollYProgress, [0, 1], [250, -250]);
   const translateYY = useTransform(scrollYProgress, [0, 1], [20, 430]);
-  const translateXXX = useTransform(scrollYProgress, [0.2, 1], [-20, 350]);
-  const translateX = useTransform(scrollYProgress, [0.1, 0.8], [40, -150]);
-
+  const translateXXX = useTransform(scrollYProgress, [0.2, 0.8], [-20, 350]);
+  const translateX = useTransform(scrollYProgress, [0.1, 0.8], [40, -350]);
 
   const [ImagesScope, ImagesAnimate] = useAnimate();
   const [TitlesScope, TitlesAnimate] = useAnimate();
@@ -112,14 +111,14 @@ export const HeroSato = () => {
         y: Math.random() * 100 - 50,
         rotate: Math.random() * 90 - 45,
         scale: 0.3,
-        color: "#ffc400",
+        color: "#ffdd85",
       }),
       visible: {
         opacity: 1,
         y: 0,
         rotate: 0,
         scale: 1,
-        color: "#ffffff",
+        color: "rgb(252,185,105,.8)",
         transition: {
           type: "spring",
           damping: 12,
@@ -145,9 +144,9 @@ export const HeroSato = () => {
             src={lamp.src}
             alt="lamp"
             width={144}
-            className="absolute left-[39%] md:left-[45%] -translate-x-1/2 -top-[19rem] md:-top-[30.5rem] h-auto w-[128px] md:w-[232px] md:h-auto object-cover"
+            className="absolute left-[34%] md:left-[45%] -translate-x-1/2 -top-[19rem] md:-top-[30.5rem] h-auto w-[128px] md:w-[232px] md:h-auto object-cover"
             animate={{
-              rotate: "11deg",
+              rotate: ["11deg", "-6deg"]
             }}
             transition={{
               duration: 2.8,
@@ -163,7 +162,7 @@ export const HeroSato = () => {
             width={144}
             className="absolute right-[14%] md:right-[24%] -top-[11rem] md:-top-[29rem] translate-x-1/2 h-auto w-[74px] md:w-[172px] md:h-auto object-cover rotate-[-14deg]"
             animate={{
-              rotate: "-8deg",
+              rotate: ["-8deg", "4deg"]
             }}
             transition={{
               duration: 3,
@@ -179,7 +178,7 @@ export const HeroSato = () => {
             width={108}
             className="absolute left-[8%] md:left-[25%] -top-[14rem] md:-top-[28.5rem] h-auto w-[98px] md:w-[172px] md:h-auto object-cover rotate-[11deg]"
             animate={{
-              rotate: "-10deg",
+              rotate: ["-10deg", "3deg"]
             }}
             transition={{
               duration: 4,
@@ -194,10 +193,10 @@ export const HeroSato = () => {
             alt="light"
             width={96}
             height={96}
-            className="absolute top-[1.5rem] md:top-[50rem] -right-[3.7rem] md:right-[31rem] -translate-x-1/2 h-[138px] w-auto md:w-[244px] md:h-auto object-cover"
+            className="absolute top-[1.5rem] md:top-[50rem] -right-[5rem] md:right-[31rem] -translate-x-1/2 h-[138px] w-auto md:w-[244px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
-              translateX: translateXXX
+              translateX: translateXXX,
             }}
           />
           <motion.img
@@ -205,7 +204,7 @@ export const HeroSato = () => {
             alt="flower"
             width={96}
             height={96}
-            className="absolute top-[3rem] md:top-[53rem] -right-[3.5rem] md:right-[31.5rem] -translate-x-1/2 h-[100px] w-auto md:w-[192px] md:h-auto object-cover"
+            className="absolute top-[3rem] md:top-[53rem] -right-[4.5rem] md:right-[31.5rem] -translate-x-1/2 h-[100px] w-auto md:w-[192px] md:h-auto object-cover"
             animate={{
               rotate: "1turn",
             }}
@@ -217,7 +216,7 @@ export const HeroSato = () => {
             }}
             style={{
               translateY: translateYYY,
-              translateX: translateXXX
+              translateX: translateXXX,
             }}
           />
           <motion.img
@@ -257,7 +256,7 @@ export const HeroSato = () => {
             className="absolute top-[13rem] md:top-[43.5rem] -left-[6rem] md:left-[28.5rem] -translate-x-1/2 h-[138px] w-auto md:w-[248px] md:h-auto object-cover"
             style={{
               translateY: translateYYY,
-              translateX: translateX
+              translateX: translateX,
             }}
           />
           <motion.img
@@ -277,7 +276,7 @@ export const HeroSato = () => {
             }}
             style={{
               translateY: translateYYY,
-              translateX: translateX
+              translateX: translateX,
             }}
           />
           <motion.img
@@ -353,7 +352,7 @@ export const HeroSato = () => {
             <h1 className="md:text-[114px] text-[54px] font-bold tracking-wide bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(252,185,105,.5))] text-transparent bg-clip-text text-center z-20">
               <TextEffect
                 per="char"
-                preset="slide"
+                variants={fancyVariants}
                 delay={3}
                 className={`${mutiaraRamadhan.className}`}
               >
@@ -374,7 +373,7 @@ export const HeroSato = () => {
             <h1 className="md:text-[114px] text-[54px] font-bold tracking-wide bg-white bg-[radial-gradient(100%_100%_at_top_left,rgb(252,185,105,.7),white)] text-transparent bg-clip-text text-center z-20">
               <TextEffect
                 per="char"
-                preset="slide"
+                variants={fancyVariants}
                 delay={3.2}
                 className={`${mutiaraRamadhan.className}`}
               >
@@ -383,27 +382,26 @@ export const HeroSato = () => {
             </h1>
           </div>
           <h1
-            className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide ${newGerbil.className}`}
+            className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" variants={fancyVariants} delay={3.6}>
+            <TextEffect per="word" preset="blur" delay={3.6}>
               Adam dan keluarga
             </TextEffect>
           </h1>
           <h1
-            className={`mt-0 md:mt-4 text-base md:text-3xl tracking-wide ${newGerbil.className}`}
+            className={`mt-0 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" variants={fancyVariants} delay={3.9}>
+            <TextEffect per="word" preset="blur" delay={3.8}>
               mohon maaf lahir dan batin
             </TextEffect>
           </h1>
           <h1
-            className={`mt-2 md:mt-4 text-base md:text-3xl tracking-wide ${newGerbil.className}`}
+            className={`mt-2 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" variants={fancyVariants} delay={4.2}>
-            🙏🙏🙏
+            <TextEffect per="word" preset="blur" delay={4}>
+              🙏🙏🙏
             </TextEffect>
           </h1>
-
         </div>
       </div>
     </section>
