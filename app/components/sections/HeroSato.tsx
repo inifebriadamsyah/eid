@@ -382,21 +382,21 @@ export const HeroSato = () => {
             </h1>
           </div>
           <h1
-            className={`mt-6 md:mt-10 text-sm md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
             <TextEffect per="word" preset="blur" delay={3.5}>
               Adam dan keluarga
             </TextEffect>
           </h1>
           <h1
-            className={`mt-1 md:mt-4 text-sm md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-0 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
             <TextEffect per="word" preset="blur" delay={3.65}>
               mohon maaf lahir dan batin
             </TextEffect>
           </h1>
           <h1
-            className={`mt-2 md:mt-4 text-sm md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-2 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
             <TextEffect per="word" preset="blur" delay={4.1}>
               🙏🙏🙏
