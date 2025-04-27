@@ -13,8 +13,8 @@ export const ScrollReveal = () => {
     offset: ["start end", "end end"],
   });
 
-  const translatingYY = useTransform(scrollYProgress, [0.05, 0.75], [375, -420]);
-  const translatingY = useTransform(scrollYProgress, [0.05, 0.75], [325, -350]);
+  const translatingYY = useTransform(scrollYProgress, [0.45, 0.8], [150, -50]);
+  const translatingY = useTransform(scrollYProgress, [0.05, 0.8], [150, -50]);
   const translatingXX = useTransform(scrollYProgress, [0.4, 0.8], [-310, -20]);
   const translatingX = useTransform(scrollYProgress, [0.5, 0.9], [270, -60]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -46,7 +46,7 @@ export const ScrollReveal = () => {
         src={catfish.src}
         alt="catfish"
         height={144}
-        className="absolute top-[48rem] left-6 md:left-72 h-28 md:h-44 w-auto z-50 rounded-2xl"
+        className="absolute top-[98rem] left-6 md:left-72 h-28 md:h-44 w-auto z-50 rounded-2xl"
         animate={{
           rotate: ["14deg", "-14deg"],
           scale: 1.1,

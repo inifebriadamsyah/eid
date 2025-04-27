@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 import localFont from "next/font/local";
 
-
 const words = ["🙏 Haloo 🙏", "taqaballahu", "minna", "wa", "minkum", "taqabbal", "yaa", "🙏 kariim 🙏"]
 // const words = ["Digimarly", "Solusi", "UMKM", "Go-", "Digital"]
 
