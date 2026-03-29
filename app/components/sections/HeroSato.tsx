@@ -382,24 +382,24 @@ export const HeroSato = () => {
             </h1>
           </div>
           <h1
-            className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+            className={`mt-8 md:mt-10 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
             <TextEffect per="word" preset="blur" delay={3.5}>
-              Saya se-keluarga
+              mohon maaf lahir dan batin ya!
+            </TextEffect>
+          </h1>
+          <h1
+            className={`mt-4 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
+          >
+            <TextEffect per="word" preset="blur" delay={3.65}>
+              scroll ke bawah
             </TextEffect>
           </h1>
           <h1
             className={`mt-0 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
-            <TextEffect per="word" preset="blur" delay={3.65}>
-              mohon maaf lahir dan batin
-            </TextEffect>
-          </h1>
-          <h1
-            className={`mt-2 md:mt-4 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
-          >
             <TextEffect per="word" preset="blur" delay={4.1}>
-              🙏🙏🙏
+              ⬇️⬇️⬇️
             </TextEffect>
           </h1>
         </div>
