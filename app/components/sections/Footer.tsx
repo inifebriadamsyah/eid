@@ -35,13 +35,13 @@ export const Footer = () => {
 
   return (
     <div
-      className="relative h-[860px] bg-black"
+      className="relative h-[1160px] bg-black"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="relative h-[calc(100vh+860px)] -top-[100vh]">
-        <div className="h-[860px] sticky top-[calc(100vh-300px)]">
+      <div className="relative h-[calc(100vh+1160px)] -top-[100vh]">
+        <div className="h-[1160px] sticky top-[calc(100vh-300px)]">
           <footer className="w-full">
-            <div className="overflow-x-clip pt-[16rem] flex items-center">
+            <div className="overflow-x-clip pt-[26rem] flex items-center">
               <motion.div
                 ref={scope}
                 // animate={{
@@ -52,7 +52,7 @@ export const Footer = () => {
                 //     ease: "linear",
                 //     repeat: Infinity,
                 // }}
-                className="flex flex-none gap-16 pr-16 text-7xl md:text-8xl font-medium group cursor-pointer"
+                className="flex flex-none gap-16 pr-16 text-5xl md:text-7xl font-medium group cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >

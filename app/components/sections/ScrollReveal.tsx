@@ -1,9 +1,9 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 import hand from "@/app/assets/hand.png";
-import hand2 from "@/app/assets/hand2.png";
-import ketupat from "@/app/assets/ketupat.png";
+import hand3 from "@/app/assets/hand3.png";
 import lantern from "@/app/assets/lantern.png";
+import ketupat from "@/app/assets/ketupat.png";
 
 export const ScrollReveal = () => {
   const targetRef = useRef<HTMLDivElement>(null);
@@ -15,14 +15,14 @@ export const ScrollReveal = () => {
 
   const translatingYY = useTransform(scrollYProgress, [0.45, 0.8], [150, -50]);
   const translatingY = useTransform(scrollYProgress, [0.05, 0.8], [150, -50]);
-  const translatingXX = useTransform(scrollYProgress, [0.2, 0.6], [-310, -40]);
-  const translatingX = useTransform(scrollYProgress, [0.4, 0.8], [270, -30]);
+  const translatingXX = useTransform(scrollYProgress, [0.25, 0.65], [-310, -40]);
+  const translatingX = useTransform(scrollYProgress, [0.2, 0.6], [200, -30]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
-  const paragraph = "Taqabbalallahu minna wa minkum taqabbal yaa kariim, wa ja'alanallahu wa iyyakum minal 'aidin wal faizin. Assalamu 'alaikum wr wb. Mbak Aini";
+  const paragraph = "Taqabbalallahu minna wa minkum taqabbal yaa kariim, wa ja'alanallahu wa iyyakum, Assalamu 'alaikum wr wb Mbak Aini 🙏";
   const words = paragraph.split(" ");
   return (
-    <div className="relative w-full bg-black pb-36 overflow-x-clip">
+    <div className="relative w-screen min-h-screen bg-black overflow-x-clip">
       <motion.img
         src={hand.src}
         alt="hand"
@@ -43,8 +43,8 @@ export const ScrollReveal = () => {
         }}
       />
       <motion.img
-        src={hand2.src}
-        alt="hand2"
+        src={hand3.src}
+        alt="hand3"
         height={144}
         className="absolute top-[82rem] left-6 md:left-72 h-32 md:h-44 w-auto z-50 rounded-2xl"
         animate={{
@@ -64,18 +64,19 @@ export const ScrollReveal = () => {
       />
 
       <div className="">
-        <div className="sticky top-16 md:top-16 lg:top-40 bg-black/70 overflow-hidden flex justify-center">
+        <div className="sticky top-0 h-screen bg-black/70 overflow-hidden flex items-end justify-center">
           <motion.img
-            src={hand2.src}
-            alt="hand2"
+            src={ketupat.src}
+            alt="lantern"
             height={144}
-            className="absolute top-[10rem] -right-4 md:right-12 h-24 md:h-40 w-auto z-50 rounded-2xl"
+            className="absolute bottom-[5.25rem] right-2 md:right-12 h-36 md:h-40 w-auto z-50 rounded-2xl"
             animate={{
-              rotate: ["-10deg", "10deg"],
-              translateY: [-25, 25],
+              rotate: ["-20deg", "10deg"],
+              translateY: [-35, 15],
             }}
             transition={{
-              duration: 2,
+              duration: 4,
+              delay: 2,
               ease: "easeInOut",
               repeat: Infinity,
               repeatType: "mirror",
@@ -88,14 +89,13 @@ export const ScrollReveal = () => {
             src={lantern.src}
             alt="lantern"
             height={144}
-            className="absolute top-[24rem] -left-2 md:left-48 h-28 md:h-44 w-auto z-50 rounded-2xl"
+            className="absolute top-[7.5rem] left-20 md:left-48 h-20 md:h-44 w-auto z-50 rounded-2xl"
             animate={{
-              rotate: ["-20deg", "10deg"],
-              translateY: [-35, 15],
+              rotate: ["24deg", "-14deg"],
+              scale: 1.1,
             }}
             transition={{
-              duration: 3.7,
-              delay: 2,
+              duration: 1.5,
               ease: "easeInOut",
               repeat: Infinity,
               repeatType: "reverse",
@@ -106,7 +106,7 @@ export const ScrollReveal = () => {
           />
           <p
             // ref={targetRef}
-            className="text-[2rem] md:text-[54px] word-spacing-wide md:px-10 py-16 px-12 max-w-5xl text-white/70 tracking-normal flex flex-wrap leading-[1.05] font-normal"
+            className="text-[1.925rem] md:text-[50px] word-spacing-wide md:px-10 py-16 px-12 max-w-5xl text-white/70 tracking-normal md:tracking-wide flex flex-wrap md:leading-[1.4] leading-[1.2] font-normal"
           >
             {words.map((word, i) => {
               const start = i / words.length;
