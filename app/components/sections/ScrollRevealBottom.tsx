@@ -108,7 +108,7 @@ export const ScrollRevealBottom = () => {
           />
           <p
             // ref={targetRef}
-            className="text-[1.15rem] md:text-[34px] md:px-10 py-16 px-12 max-w-5xl text-white/70 tracking-normal flex flex-wrap leading-[1.05] font-normal"
+            className="text-[1.15rem] md:text-[34px] md:px-10 py-16 px-12 max-w-5xl text-white/70 tracking-normal flex flex-wrap leading-[1] md:leading-[1.35] font-normal"
           >
             {words.map((word, i) => {
               const start = i / words.length;
