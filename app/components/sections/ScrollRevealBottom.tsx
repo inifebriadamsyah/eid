@@ -17,14 +17,14 @@ export const ScrollRevealBottom = () => {
 
   const translatingYY = useTransform(scrollYProgress, [0.45, 0.8], [200, -50]);
   const translatingY = useTransform(scrollYProgress, [0.15, 0.5], [200, -50]);
-  const translatingXX = useTransform(scrollYProgress, [0.15, 0.65], [-310, -40]);
-  const translatingX = useTransform(scrollYProgress, [0, 0.195], [200, -80]);
+  const translatingXX = useTransform(scrollYProgress, [0.4, 0.65], [-310, -40]);
+  const translatingX = useTransform(scrollYProgress, [0, 0.2], [200, -80]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const paragraph = "Dari saya khususnya dan ibu mau mohon maaf karena pasti ada salah kata ataupun perbuatan yang kurang berkenan. Mohon maaf kemarin tidak berlanjut ngobrolnya karena saya pikir kalau dilanjutkan takutnya mendzolimi peluang karir masing-masing Mbak 🙏 dan setelah itu bingung harus menyampaikannya bagaimana. Semoga semua ikhtiarnya dilancarkan oleh Allah ya Mbak, Aamiin 🤲";
   const words = paragraph.split(" ");
   return (
-    <div className="relative w-screen min-h-screen bg-black overflow-x-clip">
+    <div className="relative w-full max-w-full min-h-screen bg-black overflow-x-clip">
       <motion.img
         src={hand.src}
         alt="hand"
@@ -71,7 +71,7 @@ export const ScrollRevealBottom = () => {
             src={character.src}
             alt="character"
             height={144}
-            className="absolute -bottom-[3.5rem] -right-12 md:right-12 h-[14rem] md:h-72 w-auto z-50 rounded-2xl"
+            className="absolute -bottom-[3.5rem] -right-12 md:right-12 h-[14rem] md:h-96 w-auto z-50 rounded-2xl"
             animate={{
               rotate: ["-1deg", "7deg"],
               scale: 1.05,

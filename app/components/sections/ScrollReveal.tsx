@@ -22,7 +22,7 @@ export const ScrollReveal = () => {
   const paragraph = "Taqabbalallahu minna wa minkum taqabbal yaa kariim, wa ja'alanallahu wa iyyakum, Assalamu 'alaikum wr wb Mbak Aini 🙏";
   const words = paragraph.split(" ");
   return (
-    <div className="relative w-screen min-h-screen bg-black overflow-x-clip">
+    <div className="relative w-full max-w-full min-h-screen bg-black overflow-x-clip">
       <motion.img
         src={hand.src}
         alt="hand"
@@ -64,7 +64,7 @@ export const ScrollReveal = () => {
       />
 
       <div className="">
-        <div className="sticky top-0 h-screen bg-black/70 overflow-hidden flex items-end justify-center">
+        <div className="sticky top-0 h-screen bg-black/70 overflow-hidden flex items-end md:items-center justify-center">
           <motion.img
             src={ketupat.src}
             alt="lantern"
