@@ -1,8 +1,8 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 import hand from "@/app/assets/hand.png";
+import hand2 from "@/app/assets/hand2.png";
 import ketupat from "@/app/assets/ketupat.png";
-import drum from "@/app/assets/drum.png";
 import lantern from "@/app/assets/lantern.png";
 
 export const ScrollReveal = () => {
@@ -15,8 +15,8 @@ export const ScrollReveal = () => {
 
   const translatingYY = useTransform(scrollYProgress, [0.45, 0.8], [150, -50]);
   const translatingY = useTransform(scrollYProgress, [0.05, 0.8], [150, -50]);
-  const translatingXX = useTransform(scrollYProgress, [0.3, 0.8], [-310, -40]);
-  const translatingX = useTransform(scrollYProgress, [0.5, 0.9], [270, -30]);
+  const translatingXX = useTransform(scrollYProgress, [0.2, 0.6], [-310, -40]);
+  const translatingX = useTransform(scrollYProgress, [0.4, 0.8], [270, -30]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   const paragraph = "Taqabbalallahu minna wa minkum taqabbal yaa kariim, wa ja'alanallahu wa iyyakum minal 'aidin wal faizin. Assalamu 'alaikum wr wb. Mbak Aini";
@@ -43,8 +43,8 @@ export const ScrollReveal = () => {
         }}
       />
       <motion.img
-        src={ketupat.src}
-        alt="ketupat"
+        src={hand2.src}
+        alt="hand2"
         height={144}
         className="absolute top-[82rem] left-6 md:left-72 h-32 md:h-44 w-auto z-50 rounded-2xl"
         animate={{
@@ -66,8 +66,8 @@ export const ScrollReveal = () => {
       <div className="">
         <div className="sticky top-16 md:top-16 lg:top-40 bg-black/70 overflow-hidden flex justify-center">
           <motion.img
-            src={drum.src}
-            alt="drum"
+            src={hand2.src}
+            alt="hand2"
             height={144}
             className="absolute top-[10rem] -right-4 md:right-12 h-24 md:h-40 w-auto z-50 rounded-2xl"
             animate={{
