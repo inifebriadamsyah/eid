@@ -16,7 +16,7 @@ export const ScrollRevealBottom = () => {
   });
 
   const translatingYY = useTransform(scrollYProgress, [0.45, 0.8], [200, -50]);
-  const translatingY = useTransform(scrollYProgress, [0.5, 0.8], [200, -50]);
+  const translatingY = useTransform(scrollYProgress, [0.15, 0.5], [200, -50]);
   const translatingXX = useTransform(scrollYProgress, [0.15, 0.65], [-310, -40]);
   const translatingX = useTransform(scrollYProgress, [0, 0.195], [200, -80]);
   //  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -71,10 +71,10 @@ export const ScrollRevealBottom = () => {
             src={character.src}
             alt="character"
             height={144}
-            className="absolute -bottom-[1.5rem] -right-12 md:right-12 h-48 md:h-72 w-auto z-50 rounded-2xl"
+            className="absolute -bottom-[3.5rem] -right-12 md:right-12 h-[14rem] md:h-72 w-auto z-50 rounded-2xl"
             animate={{
-              rotate: ["-7deg", "7deg"],
-              scale: 1.2,
+              rotate: ["-1deg", "7deg"],
+              scale: 1.05,
             }}
             transition={{
               duration: 2,
