@@ -26,20 +26,20 @@ export const Footer = () => {
   useEffect(() => {
     if (animation.current) {
       if (isHovered) {
-        animation.current.speed = 0.5;
+        animation.current.speed = 0.25;
       } else {
-        animation.current.speed = 1;
+        animation.current.speed = 0.75;
       }
     }
   }, [isHovered]);
 
   return (
     <div
-      className="relative h-[1060px] bg-black"
+      className="relative h-[860px] bg-black"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="relative h-[calc(100vh+1060px)] -top-[100vh]">
-        <div className="h-[1060px] sticky top-[calc(100vh-300px)]">
+      <div className="relative h-[calc(100vh+860px)] -top-[100vh]">
+        <div className="h-[860px] sticky top-[calc(100vh-300px)]">
           <footer className="w-full">
             <div className="overflow-x-clip pt-[16rem] flex items-center">
               <motion.div
@@ -58,10 +58,14 @@ export const Footer = () => {
               >
                 {Array.from({ length: 10 }).map((_, i) => (
                   <div key={i} className="flex items-center gap-16">
-                    <span className="text-7xl">🙏</span>
                     <span className="text-white/90 group-hover:text-[#fcb90068] transition duration-300">
                       minal aidin wal faizin
                     </span>
+                    <span className="text-7xl">🙏</span>
+                    <span className="text-white/90 group-hover:text-[#fcb90068] transition duration-300">
+                      saya mohon maaf lahir dan batin.
+                    </span>
+                    <span className="text-7xl">🙏</span>
                   </div>
                 ))}
               </motion.div>

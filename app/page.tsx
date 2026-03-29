@@ -25,6 +25,7 @@ import Preloader from "./components/sections/preloader/Preloader";
 import ScrollRevealer from "./components/sections/scrollreveal/ScrollRevealer";
 
 import { HeroSato } from "./components/sections/HeroSato";
+import { ScrollRevealBottom } from "./components/sections/ScrollRevealBottom";
 
 
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
       {/* <Blog /> */}
       {/* <ScrollRevealer /> */}
       <Footer />
+      <ScrollRevealBottom />
       {/* <Contact /> */}
     </>
   )

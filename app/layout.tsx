@@ -10,7 +10,7 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "eid mubarak",
-  description: "Template created by Frontend Tribe",
+  description: "eid mubarak",
 };
 
 const mutiaraRamadhan = localFont({

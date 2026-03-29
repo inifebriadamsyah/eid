@@ -134,9 +134,9 @@ export const HeroSato = () => {
         <div className="absolute left-0">
           <Image
             src={longerBackground}
-            height={1920}
+            height={2340}
             alt="bg"
-            className="h-[61rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[28rem] -mt-6"
+            className="h-[61rem] w-[32rem] md:w-full md:h-auto object-cover z-0 md:-mt-[22rem] -mt-6"
           />
         </div>
         <div className="relative">
@@ -385,7 +385,7 @@ export const HeroSato = () => {
             className={`mt-6 md:mt-10 text-base md:text-3xl tracking-wide text-white/90 ${newGerbil.className}`}
           >
             <TextEffect per="word" preset="blur" delay={3.5}>
-              Adam dan keluarga
+              Saya se-keluarga
             </TextEffect>
           </h1>
           <h1
