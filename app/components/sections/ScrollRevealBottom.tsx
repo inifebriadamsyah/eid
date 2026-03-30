@@ -66,7 +66,7 @@ export const ScrollRevealBottom = () => {
       />
 
       <div className="">
-        <div className="sticky top-0 h-screen bg-black/70 overflow-hidden flex items-start justify-center">
+        <div className="sticky top-0 h-screen bg-black/70 overflow-hidden flex items-start md:items-center justify-center">
           <motion.img
             src={character.src}
             alt="character"
